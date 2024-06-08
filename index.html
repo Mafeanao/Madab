@@ -1,0 +1,252 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.jpeg" type="image/x-icon">
+    <title>MADAB</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+    
+    <style>
+    .hidden { display: none; }
+    .team-member {
+        display: inline-block; /* Exibe os elementos lado a lado */
+        margin-right: 20px; /* Espaçamento entre os elementos */
+        text-align: center; /* Centraliza o texto abaixo da imagem */
+    }
+    .team-member img {
+        width: 100px; /* Ajuste conforme necessário */
+        height: 100px; /* Ajustado para manter as imagens quadradas */
+        border-radius: 50%; /* Torna as imagens redondas */
+        object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+    }
+    header{
+        background-image: url(fundo.png);
+        background-position: center;
+    }
+    
+    </style>
+    <style>
+      /* Estilos opcionais para a tabela */
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      th, td {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+  </style>
+</head>
+<body onload="">
+    <header>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: #D99696;">MADAB</h1>
+    </header>
+    <ul>
+        <li><a href="javascript:void(0);" onclick="showSection('home')">Página Inicial</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('product')">Produto</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('contact')">Contato</a></li>
+        <li style="float:right"><a href="javascript:void(0);" onclick="showSection('about')">Sobre Nós</a></li>
+    </ul>
+    <!-- Seção da Página Inicial -->
+    <section id="home" class="hidden">
+        <h2><div id="welcome-message"></div> ao MADAB esfirras de maçã!</h2>
+        <img src="3.jpeg" alt="">
+        <p>Experimente nossas deliciosas esfirras feitas com maçã fresca e ingredientes de alta qualidade.</p>
+        <img src="integrantes/todosm.jpeg" alt="">
+
+        <p> Unindo o melhor da culinária árabe tradicional com o carinho genuinamente brasileiro, garantimos que cada esfirra na Madab seja servida com o máximo de qualidade e dedicação, tornando cada momento à mesa uma verdadeira celebração para nossos clientes.
+        Para mais informações e atualizações sobre a Madab, siga-nos no Instagram:  
+        <a href="https://www.instagram.com/madab_gcom?igsh=MTVwZTQzNHBxYWo4ag==">
+          <img src="instagram.png" alt="HTML tutorial" style="width:42px;height:42px;">
+          </a>
+        </p>
+        <h3>Você nos encontrará utilizando este mapa!</h3>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.1762996853977!2d-50.44223121114501!3d-22.647214499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9495398f103cdbd3%3A0xf49e6748feb2ceaa!2sFaculdade%20de%20Tecnologia%20de%20Assis!5e0!3m2!1spt-BR!2sbr!4v1715766107104!5m2!1spt-BR!2sbr" 
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </section>
+    <!-- Seção de Produto --> 
+    <section id="product" class="hidden">
+        <div class="content">
+          <div class="slides">
+              <div class="slide s1">
+                  <img src="carrosel/1.jpeg" alt="">
+              </div>
+  
+              <div class="slide">
+                  <img src="carrosel/2.jpeg" alt="">
+              </div>
+  
+              <div class="slide">
+                  <img src="carrosel/3.jpeg" alt="">
+              </div>
+  
+              <div class="slide">
+                  <img src="carrosel/4.jpeg" alt="">
+              </div>
+  
+              <div class="slide">
+                  <img src="carrosel/5.jpeg" alt="">
+              </div>
+          </div>
+        </div>
+        <p style="text-align: justify;">Temos como objetivo produzir esfihas de maçã únicas e deliciosas, utilizando matérias-primas de alta qualidade. Proporcionando uma experiência única. Poder oferecer esfirras artesanais de maçã elaboradas com ingredientes orgânicos na qual se destaca pela qualidade superior e pelo compromisso com práticas sustentáveis.
+            Embalagens sustentáveis são cruciais para empresas que se preocupam com o meio ambiente. Com isso é incluso o uso de materiais biodegradáveis para embalar esfihas, como papel Kraft.</p>
+        <h2>Nossos Ingredientes!</p>
+
+        <h3>MASSA</h3>
+              <p style="text-align: center;">*Farinha de trigo</p>
+              <p style="text-align: center;">*Margarina</p>
+              <p style="text-align: center;">*Açúcar</p>
+              <p style="text-align: center;">*Sal</p>
+              <p style="text-align: center;">*Leite</p>
+              <p style="text-align: center;">*Água</p>
+              <p style="text-align: center;">*Óleo</p>
+              <p style="text-align: center;">*Fermento biológico seco</p>
+
+          <h3>RECHEIO</h3>
+            <p style="text-align: center;">*Creme de confeiteiro: Leite condensado, gema de ovo, leite integral,  amido de milho e essência de baunilha.</p>
+            <p style="text-align: center;">*Compota de maçã: maçã fuji, açúcar, água , canela em pau e limão.</p>
+            <p style="text-align: center;">*Merengue: clara de ovo e açúcar.</p>
+            <p style="text-align: center;">*Finalização com chocolate branco.</p>
+     
+      </section>
+    <!-- Seção de Contato -->
+    <section id="contact" class="hidden">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem perguntas? Gostaria de mais informações? Entre em contato conosco:</p>
+            <h2>Pedidos antecipados!</h2>
+            <form id="formularioPedido" action="/submit_form" method="post">
+                <table>
+                    <tr>
+                        <th>Nome:</th>
+                        <td><input type="text" id="nome" name="nome" placeholder="Nome Completo" required></td>
+                    </tr>
+                    <tr>
+                        <th>Telefone:</th>
+                        <td><input type="tel" id="telefone" name="telefone" placeholder="Telefone com DDD" required></td>
+                    </tr>
+                    <tr>
+                        <th>Quantidade:</th>
+                        <td><input type="number" id="quantidade" name="quantidade" min="1" placeholder="Insira a quantidade" required></td>
+                    </tr>
+                    <tr>
+                        <th>Informações Adicionais:</th>
+                        <td><textarea id="informacoes" name="informacoes_adicionais" rows="4" cols="50" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <input type="button" value="Enviar Pedido" onclick="enviarPedido()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+            <script>
+                function enviarPedido() {
+                    let nome = document.getElementById('nome').value;
+                    let quantidadePedidos = document.getElementById('quantidade').value;
+                    let telefone = document.getElementById('telefone').value;
+                    
+                    if (nome && quantidadePedidos && telefone) {
+                        let mensagem = `Nome: ${nome}, Quantidade: ${quantidadePedidos}, Telefone: ${telefone}`;
+                        let numeroWhatsApp = '5518996611575';
+                        const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+                        window.open(linkWhatsApp);
+                        window.location.href = "file:///D:/trabaio%20-%20Copia0106/index.html"; 
+                        return false; // Impede o envio do formulário
+                    } else {
+                        alert("Por favor, preencha todos os campos necessários.");
+                        return false; // Impede o envio do formulário
+                    }
+                }
+            </script>
+        
+    </section>
+    <!-- Seção Sobre Nós -->
+    <section id="about" class="hidden">
+        <p style="font-size: 20px; color: #D99696;"><strong> MADAB - Esfirras Doces de Maçã</strong></p>
+        
+        <p style="text-align: justify;">Fundada em 23 de fevereiro de 2024 por um grupo de alunos da Fatec de Assis-SP, a Madab é fruto de um trabalho acadêmico do 5º semestre, conhecido como o desafio do doce com esfirra. Especializada na fabricação de esfirras abertas doces, nosso produto estrela é a irresistível combinação de creme de confeiteiro com compota de maçã, oferecendo uma experiência gastronômica única.</p>
+        <p style="text-align: justify;">O nome da empresa foi definido pelas inicias do nome de todos os alunos envolvidose estabelecido como Madab.
+            Na Madab, proporcionamos mais do que uma simples refeição, oferecemos uma experiência gastronômica única. Nossas esfirras doces de maçã são verdadeiros destaques, com uma massa leve e saborosa, cuidadosamente preparada com ingredientes selecionados e de alta qualidade.
+            Cada esfirra é elaborada por uma equipe de alunos dedicados e caprichosos. Unindo o melhor da culinária árabe tradicional com o carinho genuinamente brasileiro, garantimos que cada esfirra na Madab seja servida com o máximo de qualidade e dedicação, tornando cada momento à mesa uma verdadeira celebração para nossos clientes.</p>
+            
+            <h3><strong> Missão</strong></h3>
+            <p>Fornecer produtos de alta qualidade e proporcionar aos clientes uma experiência culinária única e inesquecível. Nosso compromisso é a excelência em sabor, atendimento e satisfação do cliente.</p>
+            <h3><strong>Visão</strong></h3>
+            <p>Ser a melhor  na produção de esfirras de maçã em Assis e região. Queremos que cada mordida seja uma celebração de sabor.</p>
+            <h3><strong>Valores</strong></h3>
+            <p>*Qualidade: Temos o compromisso de utilizar apenas os melhores ingredientes para confeccionar nossas esfirras.</p>
+            <p>*Inovação: Procuramos constantemente formas de melhorar e inovar, seja nas nossas receitas, nos nossos serviços ou na nossa presença na comunidade.</p>
+            <p>*Respeito: Valorizamos cada cliente, funcionário e parceiro de negócios e tratamos a todos com o máximo respeito.</p>
+            <p>*Sustentabilidade: Nós nos esforçamos para fazer escolhas comerciais que beneficiem nossos clientes, nossas comunidades e nosso planeta.</p>
+        
+        <style>
+            .team-member p:first-of-type::first-letter {
+              color: red;
+              font-weight: bold;
+            }
+          </style>
+          
+          <div class="team-member"><img src="integrantes/michele.jpeg" alt="Michele">
+            <p>Michele Ap. Pedro Faustino<br>20 anos<br>Tarumã - SP</p>
+          </div>
+          <div class="team-member"><img src="integrantes/adiel.jpeg" alt="Adriel">
+            <p>Adriel Antônio dos Santos<br>27 anos<br>Cândido Mota - SP</p>
+          </div>
+          <div class="team-member"><img src="integrantes/douglas.jpeg" alt="Douglas">
+            <p>Douglas Felipe Zimemann<br>33 anos<br>Assis - Sp</p>
+          </div>
+          <div class="team-member"><img src="integrantes/ana.jpeg" alt="Ana Paula">
+            <p>Ana Paula Amorim da Silva<br>38 anos<br>Assis - SP</p>
+          </div>
+          <div class="team-member"><img src="integrantes/beatriz.jpeg" alt="Beatriz">
+            <p>Beatriz Hespanhol de Oliveira<br>26 anos<br>Palmital - SP</p>
+          </div>
+          
+        
+        
+        
+    </section>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+        }
+    
+        // Mostrar a página inicial ao carregar
+        showSection('home');
+    </script>
+    <script src="estilo.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    let userName = prompt("Por favor, digite seu nome:");
+    if (userName) {
+        document.getElementById("welcome-message").textContent = `Bem-vindo(a), ${userName}`;
+    } else {
+        document.getElementById("welcome-message").textContent = "Bem-vindo(a)";
+    }
+    });
+
+    </script>
+    
+
+    <footer>
+        <p>&copy; 2024 Esfirras de Maçã. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>
